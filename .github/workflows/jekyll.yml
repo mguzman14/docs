@@ -45,6 +45,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           enablement: true  # Asegúrate de que esto sea true
+          environment: 'github-pages'
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
