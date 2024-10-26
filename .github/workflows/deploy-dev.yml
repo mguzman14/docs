@@ -44,5 +44,3 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Usa el token de acceso personal
           publish_branch: dev
           publish_dir: ./dev
-          enablement: true  # Asegúrate de que esto sea true
-          static_site_generator: 'jekyll'
