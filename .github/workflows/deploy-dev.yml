@@ -41,7 +41,7 @@ jobs:
       - name: Deploy to GitHub Pages (Preview)
         uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Usa el token de acceso personal
           publish_branch: dev
           publish_dir: ./dev
           enablement: true  # Asegúrate de que esto sea true
